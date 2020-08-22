@@ -1,0 +1,22 @@
+{
+  "name": "project5_menuslider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "node-sass -w scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewrey/jsProject6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewrey/jsProject6/issues"
+  },
+  "homepage": "https://github.com/andrewrey/jsProject6#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
