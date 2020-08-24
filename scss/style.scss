@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+$modal-duration: 1s;
+$primary-color: #30336b;
+$secondary-color: #be2edd;
+
 *,
 *::before,
 *::after {
@@ -8,4 +14,48 @@
 
 body {
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: $primary-color;
+  border-right: 2px solid rgba(200, 200, 200, 0.1);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  z-index: 100;
+  // transform: translateX(-100%);
+  .logo {
+    padding: 30px 0;
+    text-align: center;
+    img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+  ul {
+    list-style-type: none;
+    li {
+      border-bottom: 2px solid rgba(200, 200, 200, 0.1);
+      padding: 20px;
+
+      &:first-of-type {
+        border-top: 2px solid rgba(200, 200, 200, 0.1);
+      }
+      a {
+        &:link,
+        &:visited {
+          color: #fff;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
